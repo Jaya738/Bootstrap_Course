@@ -87,10 +87,92 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col col-sm-4 col-md-4 align-self-center">
-                    <a href="#ReserveCard" class="btn btn-warning nav-link btn-block" 
-                    data-toggle="tooltip" data-html="true" title="Or call us at <br> <strong>+852 12345678 </strong>"
-                    data-placement="bottom"
-                    role="button"> Reserve Table</a>
+                    <a class="btn btn-warning nav-link btn-block" 
+                    data-toggle="modal" data-target="#ReserveCard"
+                    > Reserve Table</a>
+                </div>
+            </div>
+        </div>
+        <div id="ReserveCard" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"><font color="black">Reserve a Table</font></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <dl class="row">
+                                <dt class="col-12 col-md-2"><font color="black">No of Guests</font></dt>
+                                <dd class="form-check col-2 col-sm-1">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <font color="black">1</font>
+                                    </label>
+                                </dd>
+                                <dd class="form-check col-2 col-sm-1">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <font color="black">2</font>
+                                    </label>
+                                </dd>
+                                <dd class="form-check col-2 col-sm-1">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <font color="black">3</font>
+                                    </label>
+                                </dd>
+                                <dd class="form-check col-2 col-sm-1">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <font color="black">4</font>
+                                    </label>
+                                </dd>
+                                <dd class="form-check col-2 col-sm-1">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <font color="black">5</font>
+                                    </label>
+                                </dd>
+                                <dd class="form-check col-2 col-sm-1">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <font color="black">6</font>
+                                    </label>
+                                </dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-md-2"><font color="black">Section</font></dt>
+                                <div class="col col-md-2">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success active">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-smoking
+                                        </label>
+                                        <label class="btn btn-danger">
+                                            <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                                        </label>
+                                    </div>
+                                </div>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-12 col-sm-2"><font color="black">Date and Time</font></dt>
+                                <div class="col-12 col-md-4">
+                                    <input type="text" class="form-control" id="date" name="Date" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <input type="text" class="form-control" id="time" name="Time" placeholder="Time">
+                                </div>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-md-2"> </dt>
+                                <div class="col col-md-6">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </dl>             
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -209,69 +291,7 @@
             </div>
         </div>
     </div>
-    <div class="row row-content justify-content-center" id="ReserveCard">
-        <div class="col-12 col-sm-6">
-            <div class="card">
-                <h3 class="card-header bg-warning text-white">Reserve</h3>
-                <div class="card-body">
-                    <dl class="row">
-                        <dt class="col-12 col-sm-2">No of Guests</dt>
-                        <dd class="form-check col-2 col-sm-1">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                1
-                            </label>
-                        </dd>
-                        <dd class="form-check col-2 col-sm-1">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                2
-                            </label>
-                        </dd>
-                        <dd class="form-check col-2 col-sm-1">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                3
-                            </label>
-                        </dd>
-                        <dd class="form-check col-2 col-sm-1">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                4
-                            </label>
-                        </dd>
-                        <dd class="form-check col-2 col-sm-1">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                5
-                            </label>
-                        </dd>
-                        <dd class="form-check col-2 col-sm-1">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                6
-                            </label>
-                        </dd>
-                    </dl>
-                    <dl class="row">
-                        <dt class="col-12 col-sm-2">Date and Time</dt>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="date" name="Date" placeholder="Date">
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="time" name="Time" placeholder="Time">
-                        </div>
-                    </dl>
-                    <dl class="row">
-                        <dt class="col-md-2"> </dt>
-                        <div class="col col-md-2">
-                            <button type="submit" class="btn btn-primary">Reserve</button>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -318,9 +338,4 @@
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-<script>
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script>
 </html>
