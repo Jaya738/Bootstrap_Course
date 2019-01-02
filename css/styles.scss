@@ -72,3 +72,13 @@ body{
     position: absolute;
     bottom: 0px;
 }
+
+.modalHeader{
+    background:$background-dark;
+}
+.modalBody{
+    background:$background-pale;
+}
+.closepale{
+    color:$background-pale;
+}
